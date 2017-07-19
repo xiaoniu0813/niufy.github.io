@@ -266,128 +266,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://nfy.party/2017/06/26/mianshiti/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="牛仔">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="牛仔">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/26/mianshiti/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-26T10:35:08+08:00">
-                2017-06-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="java相关基础知识"><a href="#java相关基础知识" class="headerlink" title="java相关基础知识"></a>java相关基础知识</h3><h4 id="1-面向对象的特征有哪些方面："><a href="#1-面向对象的特征有哪些方面：" class="headerlink" title="1.面向对象的特征有哪些方面："></a>1.面向对象的特征有哪些方面：</h4><blockquote>
-<p> 1.抽象：<br>    抽象就是忽略一个主题中当前目标无关的那些方面，一遍更充分的注意与当前目标有关的方面。抽象并不打算了解全部问题，而知识选择其中的一部分，暂时不用部分细节。抽象包括两个方面，一是过程抽象，二是数据抽象。(总结：有共性的方法可以抽象为方法/接口)<br> 2.继承：<br>    继承是一种联结类的层次模式，并且允许和国立类重用，它提供了一种明确表述共性的方法。对象的一个新类可以从现有的类中派生，这个过程称为继承。新类继承了原始类的特性，新类称为原始类的派生类（子类），而原始类称为新类的基类（父类）。派生类可以从它的基类哪里继承方法和实例变量，而且类可以修改增加新的方法使之更适合特殊的需要。（总结：实现代码复用，减少代码冗余）<br>3.封装：<br>    封装是把过程和数据保卫起来，对数据的访问只能通过已定义的界面。面向对象计算始于这个基本理念，即现实世界可以被描绘成一系列全自治、封装对象，这些对象通过一个受保护的接口访问其他对象。(总结：隐藏一切可隐藏的东西，只向外界提供最简单的编程接口)<br>4.多态：<br>    多态性是指允许不同子类型的对象对同一消息作出不同的响应（总结：用同样的对象引用调用同样的方法但是做了不同的事情）  </p>
-</blockquote>
-<h3 id="2-String是最基本的数据类型吗？"><a href="#2-String是最基本的数据类型吗？" class="headerlink" title="2.String是最基本的数据类型吗？"></a>2.String是最基本的数据类型吗？</h3><blockquote>
-<p>不是，基本的数据类型包括byte、int、char、long、float、double、boolean和short。</p>
-<h3 id="3-int和Integer有什么区别？"><a href="#3-int和Integer有什么区别？" class="headerlink" title="3.int和Integer有什么区别？"></a>3.int和Integer有什么区别？</h3><p>两种不同的类型，int是原始数据类型，Integer是int的封装类。  </p>
-<h3 id="4-String和StringBuffer的区别："><a href="#4-String和StringBuffer的区别：" class="headerlink" title="4.String和StringBuffer的区别："></a>4.String和StringBuffer的区别：</h3><p>String存储的值为只读的不能修改<br>StringBuffer里面的自出川对象可以直接进行修改。  </p>
-<h3 id="5-运行时异常与一般异常有何不同？"><a href="#5-运行时异常与一般异常有何不同？" class="headerlink" title="5.运行时异常与一般异常有何不同？"></a>5.运行时异常与一般异常有何不同？</h3><p>一般异常是指我们经常遇到的IO异常以及SQL异常，对于这种异常java片一起强制要求我们对这些异常进行catch处理，运行异常可以不用处理。  </p>
-<h3 id="6-说出Servlet的声明周期，并说出Servlet和CGI的区别。"><a href="#6-说出Servlet的声明周期，并说出Servlet和CGI的区别。" class="headerlink" title="6.说出Servlet的声明周期，并说出Servlet和CGI的区别。"></a>6.说出Servlet的声明周期，并说出Servlet和CGI的区别。</h3><p>Servlet被服务器实例化后，容器运行其init方法，请求到达时运行其service方法，service方法自动派遣运行与请求对应的doXXX方法，当服务器决定将实例销毁的时候调用destroy方法。<br>Servlet通过多线程方式运行service方法，一个实例可以服务多个请求，一般情况下其实例不会被销毁，而CGI对每个请求都产生新进程服务完成后就自动销毁，效率上低于Servlet  </p>
-<h3 id="7-说出ArrayList，LinkedList的存储性能和特性。"><a href="#7-说出ArrayList，LinkedList的存储性能和特性。" class="headerlink" title="7.说出ArrayList，LinkedList的存储性能和特性。"></a>7.说出ArrayList，LinkedList的存储性能和特性。</h3><p>ArrayList使用数组方式存储数据，随机访问get和set优于LinkedList。<br>LinkedList使用链表方式存储数据，对于add和remove优于ArrayList。  </p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://nfy.party/2017/06/24/zl/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -706,7 +584,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
