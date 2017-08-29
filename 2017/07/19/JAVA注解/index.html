@@ -99,7 +99,7 @@
 <meta property="og:url" content="http://nfy.party/2017/07/19/JAVA注解/index.html">
 <meta property="og:site_name" content="牛仔">
 <meta property="og:description" content="JAVA常用注解1.@Override注解 @Override注解表示子类要重写父类的对应方法。一般应用到Service实现类（Impl）的具体方法  2.@Service注解 将自动注册到Spring容器。一般应用到ServiceImpl  3.@Autowired @Autowired注释，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过@Autowired的使用来消除">
-<meta property="og:updated_time" content="2017-07-20T01:51:38.474Z">
+<meta property="og:updated_time" content="2017-08-29T03:36:40.127Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA注解">
 <meta name="twitter:description" content="JAVA常用注解1.@Override注解 @Override注解表示子类要重写父类的对应方法。一般应用到Service实现类（Impl）的具体方法  2.@Service注解 将自动注册到Spring容器。一般应用到ServiceImpl  3.@Autowired @Autowired注释，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过@Autowired的使用来消除">
@@ -348,7 +348,10 @@
 <p>获取提交的参数，可以指定是否必须传送该参数，可以给该参数附加默认值示例：@RequestParam(value = “index”,required = false,defaultValue = “1”) int index</p>
 </blockquote>
 <h3 id="7-ResponseBody"><a href="#7-ResponseBody" class="headerlink" title="7.@ResponseBody"></a>7.@ResponseBody</h3><blockquote>
-<p>该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。<br>一般用于返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用；</p>
+<p>该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。<br>一般用于返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用；  </p>
+</blockquote>
+<h3 id="8-Transactional"><a href="#8-Transactional" class="headerlink" title="8.@Transactional"></a>8.@Transactional</h3><blockquote>
+<p>事务注解，把该方法内的每一条语句逐条执行，在执行完毕时，如果成功则隐式提交事务，如果执行失败则隐式回滚事务</p>
 </blockquote>
 
       
@@ -509,7 +512,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA常用注解"><span class="nav-number">1.</span> <span class="nav-text">JAVA常用注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Override注解"><span class="nav-number">2.</span> <span class="nav-text">1.@Override注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Service注解"><span class="nav-number">3.</span> <span class="nav-text">2.@Service注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Autowired"><span class="nav-number">4.</span> <span class="nav-text">3.@Autowired</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Controller、-RestController"><span class="nav-number">5.</span> <span class="nav-text">4.@Controller、@RestController</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-RequestMapping"><span class="nav-number">6.</span> <span class="nav-text">5.@RequestMapping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-RequestParam"><span class="nav-number">7.</span> <span class="nav-text">6.@RequestParam</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-ResponseBody"><span class="nav-number">8.</span> <span class="nav-text">7.@ResponseBody</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA常用注解"><span class="nav-number">1.</span> <span class="nav-text">JAVA常用注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Override注解"><span class="nav-number">2.</span> <span class="nav-text">1.@Override注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Service注解"><span class="nav-number">3.</span> <span class="nav-text">2.@Service注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Autowired"><span class="nav-number">4.</span> <span class="nav-text">3.@Autowired</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Controller、-RestController"><span class="nav-number">5.</span> <span class="nav-text">4.@Controller、@RestController</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-RequestMapping"><span class="nav-number">6.</span> <span class="nav-text">5.@RequestMapping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-RequestParam"><span class="nav-number">7.</span> <span class="nav-text">6.@RequestParam</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-ResponseBody"><span class="nav-number">8.</span> <span class="nav-text">7.@ResponseBody</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Transactional"><span class="nav-number">9.</span> <span class="nav-text">8.@Transactional</span></a></li></ol></div>
             
 
           </div>

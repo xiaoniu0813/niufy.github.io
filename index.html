@@ -470,7 +470,10 @@
 <p>获取提交的参数，可以指定是否必须传送该参数，可以给该参数附加默认值示例：@RequestParam(value = “index”,required = false,defaultValue = “1”) int index</p>
 </blockquote>
 <h3 id="7-ResponseBody"><a href="#7-ResponseBody" class="headerlink" title="7.@ResponseBody"></a>7.@ResponseBody</h3><blockquote>
-<p>该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。<br>一般用于返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用；</p>
+<p>该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。<br>一般用于返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用；  </p>
+</blockquote>
+<h3 id="8-Transactional"><a href="#8-Transactional" class="headerlink" title="8.@Transactional"></a>8.@Transactional</h3><blockquote>
+<p>事务注解，把该方法内的每一条语句逐条执行，在执行完毕时，如果成功则隐式提交事务，如果执行失败则隐式回滚事务</p>
 </blockquote>
 
           
