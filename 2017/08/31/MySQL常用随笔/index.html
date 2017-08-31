@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="JAVA常用注解1.@Override注解 @Override注解表示子类要重写父类的对应方法。一般应用到Service实现类（Impl）的具体方法  2.@Service注解 将自动注册到Spring容器。一般应用到ServiceImpl  3.@Autowired @Autowired注释，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过@Autowired的使用来消除">
+<meta name="description" content="MySQL常用函数1.验证如果是空给默认值1case  when &amp;lt;被判断字段&amp;gt;  is  not null then &amp;lt;显示字段&amp;gt; else &amp;lt;如果为空显示的值&amp;gt; end AS &amp;lt;字段别名&amp;gt; 2.取指定数量的数据条数123order by id desc limit 10 --按照id的倒序排序 取出前10条 order by id desc li">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JAVA注解">
-<meta property="og:url" content="http://nfy.party/2017/07/19/JAVA注解/index.html">
+<meta property="og:title" content="MySQL常用随笔">
+<meta property="og:url" content="http://nfy.party/2017/08/31/MySQL常用随笔/index.html">
 <meta property="og:site_name" content="牛仔">
-<meta property="og:description" content="JAVA常用注解1.@Override注解 @Override注解表示子类要重写父类的对应方法。一般应用到Service实现类（Impl）的具体方法  2.@Service注解 将自动注册到Spring容器。一般应用到ServiceImpl  3.@Autowired @Autowired注释，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过@Autowired的使用来消除">
-<meta property="og:updated_time" content="2017-08-29T03:49:15.693Z">
+<meta property="og:description" content="MySQL常用函数1.验证如果是空给默认值1case  when &amp;lt;被判断字段&amp;gt;  is  not null then &amp;lt;显示字段&amp;gt; else &amp;lt;如果为空显示的值&amp;gt; end AS &amp;lt;字段别名&amp;gt; 2.取指定数量的数据条数123order by id desc limit 10 --按照id的倒序排序 取出前10条 order by id desc li">
+<meta property="og:updated_time" content="2017-08-31T02:15:30.144Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JAVA注解">
-<meta name="twitter:description" content="JAVA常用注解1.@Override注解 @Override注解表示子类要重写父类的对应方法。一般应用到Service实现类（Impl）的具体方法  2.@Service注解 将自动注册到Spring容器。一般应用到ServiceImpl  3.@Autowired @Autowired注释，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过@Autowired的使用来消除">
+<meta name="twitter:title" content="MySQL常用随笔">
+<meta name="twitter:description" content="MySQL常用函数1.验证如果是空给默认值1case  when &amp;lt;被判断字段&amp;gt;  is  not null then &amp;lt;显示字段&amp;gt; else &amp;lt;如果为空显示的值&amp;gt; end AS &amp;lt;字段别名&amp;gt; 2.取指定数量的数据条数123order by id desc limit 10 --按照id的倒序排序 取出前10条 order by id desc li">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://nfy.party/2017/07/19/JAVA注解/"/>
+  <link rel="canonical" href="http://nfy.party/2017/08/31/MySQL常用随笔/"/>
 
 
 
 
 
-  <title>JAVA注解 | 牛仔</title>
+  <title>MySQL常用随笔 | 牛仔</title>
   
 
 
@@ -265,7 +265,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://nfy.party/2017/07/19/JAVA注解/">
+    <link itemprop="mainEntityOfPage" href="http://nfy.party/2017/08/31/MySQL常用随笔/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="牛仔">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JAVA注解</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL常用随笔</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-19T17:05:14+08:00">
-                2017-07-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-31T10:00:36+08:00">
+                2017-08-31
               </time>
             
 
@@ -329,31 +329,12 @@
       
 
       
-        <h3 id="JAVA常用注解"><a href="#JAVA常用注解" class="headerlink" title="JAVA常用注解"></a>JAVA常用注解</h3><h3 id="1-Override注解"><a href="#1-Override注解" class="headerlink" title="1.@Override注解"></a>1.@Override注解</h3><blockquote>
-<p>@Override注解表示子类要重写父类的对应方法。<br>一般应用到Service实现类（Impl）的具体方法</p>
+        <h3 id="MySQL常用函数"><a href="#MySQL常用函数" class="headerlink" title="MySQL常用函数"></a>MySQL常用函数</h3><h4 id="1-验证如果是空给默认值"><a href="#1-验证如果是空给默认值" class="headerlink" title="1.验证如果是空给默认值"></a>1.验证如果是空给默认值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">case  when &lt;被判断字段&gt;  is  not null then &lt;显示字段&gt; else &lt;如果为空显示的值&gt; end AS &lt;字段别名&gt;</div></pre></td></tr></table></figure>
+<h4 id="2-取指定数量的数据条数"><a href="#2-取指定数量的数据条数" class="headerlink" title="2.取指定数量的数据条数"></a>2.取指定数量的数据条数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">order by id desc limit 10 --按照id的倒序排序 取出前10条 </div><div class="line">order by id desc limit 0,10 --按照id的倒序排序 取出前10条 </div><div class="line">order by id limit 5,10 --按照id的正序排序 从第5条开始取10条</div></pre></td></tr></table></figure>
+<h4 id="3-时间相关函数"><a href="#3-时间相关函数" class="headerlink" title="3. 时间相关函数"></a>3. 时间相关函数</h4><blockquote>
+<p>获取系统日期： NOW() 时间格式：2017-08-08 08:08:08<br>获取系统日期：CURDATE()   时间格式：2017-08-08<br>格式化日期： DATE_FORMAT(date, format) 例：DATE_FORMAT(createtime,’%Y-%m-%d’)<br>DATE_SUB(CURDATE(), INTERVAL 7 DAY) 前推一周<br>DATE_SUB(CURDATE(), INTERVAL 1 MONTH) 前推一个月<br>DATE_SUB(NOW(),INTERVAL 1 QUARTER))  前推一个季度<br>DATE_SUB(NOW(),INTERVAL 1 YEAR)  前推一年<br>PERIOD_DIFF(P1,P2) 返回周期P1和P2之间的月数。   P1和P2格式为YYMM或YYYYMM。注意周期参数 P1 和 P2 都不是日期值。<br>TO_DAYS( NOW( ) )  规范时间格式<br>QUARTER(NOW()) 返回当前时间是第几季度<br>YEAR(NOW()) 返回年度信息  </p>
 </blockquote>
-<h3 id="2-Service注解"><a href="#2-Service注解" class="headerlink" title="2.@Service注解"></a>2.@Service注解</h3><blockquote>
-<p>将自动注册到Spring容器。<br>一般应用到ServiceImpl</p>
-</blockquote>
-<h3 id="3-Autowired"><a href="#3-Autowired" class="headerlink" title="3.@Autowired"></a>3.@Autowired</h3><blockquote>
-<p>@Autowired注释，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过@Autowired的使用来消除 set ，get方法。</p>
-</blockquote>
-<h3 id="4-Controller、-RestController"><a href="#4-Controller、-RestController" class="headerlink" title="4.@Controller、@RestController"></a>4.@Controller、@RestController</h3><blockquote>
-<p>@Controller标识一个Spring类是Spring MVC controller处理器。<br>@RestController是@Controller和@ResponseBody的结合体，两个标注合并起来的作用。</p>
-</blockquote>
-<h3 id="5-RequestMapping"><a href="#5-RequestMapping" class="headerlink" title="5.@RequestMapping"></a>5.@RequestMapping</h3><blockquote>
-<p>RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。用于类上，表示类中的所有响应请求的方法都是以该地址作。<br>@PostMapping指定请求的method类型为POST<br>@GetMapping指定请求的method类型为GET</p>
-</blockquote>
-<h3 id="6-RequestParam"><a href="#6-RequestParam" class="headerlink" title="6.@RequestParam"></a>6.@RequestParam</h3><blockquote>
-<p>获取提交的参数，可以指定是否必须传送该参数，可以给该参数附加默认值示例：@RequestParam(value = “index”,required = false,defaultValue = “1”) int index</p>
-</blockquote>
-<h3 id="7-ResponseBody"><a href="#7-ResponseBody" class="headerlink" title="7.@ResponseBody"></a>7.@ResponseBody</h3><blockquote>
-<p>该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。<br>一般用于返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用；  </p>
-</blockquote>
-<h3 id="8-Transactional"><a href="#8-Transactional" class="headerlink" title="8.@Transactional"></a>8.@Transactional</h3><blockquote>
-<p>事务注解，把该方法内的每一条语句逐条执行，在执行完毕时，如果成功则隐式提交事务，如果执行失败则隐式回滚事务</p>
-</blockquote>
-
+<h4 id="4-相关示例"><a href="#4-相关示例" class="headerlink" title="4.相关示例"></a>4.相关示例</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">--今天</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE TO_DAYS(&lt;时间字段名&gt;) = to_days(NOW());  </div><div class="line">--昨天</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE TO_DAYS( NOW( ) ) - TO_DAYS( &lt;时间字段名&gt;) &lt;= 1  </div><div class="line">--近7天</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE DATE_SUB(CURDATE(), INTERVAL 7 DAY) &lt;= DATE(&lt;时间字段名&gt;)  </div><div class="line">--近30天</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE DATE_SUB(CURDATE(), INTERVAL 30 DAY) &lt;= DATE(&lt;时间字段名&gt;)  </div><div class="line">--本月</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE DATE_FORMAT( &lt;时间字段名&gt;, &apos;%Y-%m&apos; ) = DATE_FORMAT(NOW(),&apos;%Y-%m&apos;)   </div><div class="line">--上月</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE PERIOD_DIFF( DATE_FORMAT( NOW( ) , &apos;%Y-%m&apos; ) , DATE_FORMAT( &lt;时间字段名&gt;, &apos;%Y-%m&apos; ) ) =1  </div><div class="line">--查询本季度数据</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE QUARTER(&lt;时间字段名&gt;)=QUARTER(NOW());  </div><div class="line">--查询上季度数据</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE QUARTER(&lt;时间字段名&gt;)=QUARTER(DATE_SUB(NOW(),INTERVAL 1 QUARTER));  </div><div class="line">--查询本年数据</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE YEAR(&lt;时间字段名&gt;)=YEAR(NOW());  </div><div class="line">--查询上年数据</div><div class="line">SELECT * FROM &lt;表名&gt; WHERE YEAR(&lt;时间字段名&gt;)=YEAR(DATE_SUB(NOW(),INTERVAL 1 YEAR));</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -389,8 +370,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/24/zl/" rel="next" title="Markdown常用示例展示">
-                <i class="fa fa-chevron-left"></i> Markdown常用示例展示
+              <a href="/2017/08/29/BigDecimal相关资料/" rel="next" title="BigDecimal相关资料">
+                <i class="fa fa-chevron-left"></i> BigDecimal相关资料
               </a>
             
           </div>
@@ -398,10 +379,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/29/BigDecimal相关资料/" rel="prev" title="BigDecimal相关资料">
-                BigDecimal相关资料 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -512,7 +489,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA常用注解"><span class="nav-number">1.</span> <span class="nav-text">JAVA常用注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Override注解"><span class="nav-number">2.</span> <span class="nav-text">1.@Override注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Service注解"><span class="nav-number">3.</span> <span class="nav-text">2.@Service注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Autowired"><span class="nav-number">4.</span> <span class="nav-text">3.@Autowired</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Controller、-RestController"><span class="nav-number">5.</span> <span class="nav-text">4.@Controller、@RestController</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-RequestMapping"><span class="nav-number">6.</span> <span class="nav-text">5.@RequestMapping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-RequestParam"><span class="nav-number">7.</span> <span class="nav-text">6.@RequestParam</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-ResponseBody"><span class="nav-number">8.</span> <span class="nav-text">7.@ResponseBody</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Transactional"><span class="nav-number">9.</span> <span class="nav-text">8.@Transactional</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL常用函数"><span class="nav-number">1.</span> <span class="nav-text">MySQL常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-验证如果是空给默认值"><span class="nav-number">1.1.</span> <span class="nav-text">1.验证如果是空给默认值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-取指定数量的数据条数"><span class="nav-number">1.2.</span> <span class="nav-text">2.取指定数量的数据条数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-时间相关函数"><span class="nav-number">1.3.</span> <span class="nav-text">3. 时间相关函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-相关示例"><span class="nav-number">1.4.</span> <span class="nav-text">4.相关示例</span></a></li></ol></li></ol></div>
             
 
           </div>
